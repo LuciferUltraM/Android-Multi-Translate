@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MultiTranslate!</string>
+    <string name="app_name">Multi-Translate</string>
+    <string-array name="language_from">
+        <item>Auto Detect</item>
+        <item>English</item>
+        <item>Thai</item>
+        <item>French</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+        <item>Korean</item>
+    </string-array>
+    <string-array name="language">
+        <item>English</item>
+        <item>Thai</item>
+        <item>French</item>
+        <item>Japanese</item>
+        <item>Chinese</item>
+        <item>Korean</item>
+    </string-array>
+</resources>

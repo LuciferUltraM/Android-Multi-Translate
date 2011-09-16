@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="3dip" >
+     <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="3dip"
+    	>
+    <EditText
+    	android:id="@+id/edtWord"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1" />
+    <ImageButton 
+    	android:id="@+id/btnSpeech"
+    	android:layout_width="50dip"
+    	android:layout_height="50dip"
+    	android:src="@android:drawable/ic_btn_speak_now" />
+    <ImageButton 
+    	android:id="@+id/btnTranslate"
+    	android:layout_width="50dip"
+    	android:layout_height="50dip"
+    	android:src="@android:drawable/ic_media_play" />
+    	</LinearLayout>
+    
+    <TableLayout 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent"
+    android:stretchColumns="2">
+        <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="From : "
+            android:padding="3dip"
+            android:textSize="20sp" />
+        <Spinner
+	    	android:id="@+id/spnLangFrom"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="To :"
+            android:padding="3dip"
+            android:textSize="20sp" />
+        <Spinner 
+	    	android:id="@+id/spnLangTo"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+    	<LinearLayout 
+	    	android:orientation="horizontal"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content">
+	    	<EditText
+		    	android:id="@+id/edtResult"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1" />
+		    <ImageButton 
+		    	android:id="@+id/btnCopy"
+		    	android:layout_width="50dip"
+		    	android:layout_height="50dip"
+		    	android:src="@android:drawable/ic_menu_save" />
+    	</LinearLayout>
+</LinearLayout>
